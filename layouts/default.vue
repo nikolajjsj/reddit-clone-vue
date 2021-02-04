@@ -3,15 +3,13 @@
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-btn class="mx-2" color="primary" nuxt to="/">Home</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
-      <span>Reddit-clone by Nikolaj Johannes Skole Jensen</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -20,7 +18,6 @@ export default {
   data () {
     return {
       clipped: false,
-      fixed: false,
       title: 'Reddit clone'
     }
   }
