@@ -50,7 +50,6 @@ export default {
   },
   async asyncData({  $axios }) {
       const posts = await $axios.$get(URL).then(res => res.data.children);
-      console.log(posts);
       return { posts }
     },
 }
